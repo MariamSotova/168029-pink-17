@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Мариам Сотова](https://up.htmlacademy.ru/adaptive/17/user/168029).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Вайнруб].
 
 ---
 
