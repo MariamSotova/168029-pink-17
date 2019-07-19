@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="#" width="226" height="30" alt="Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <!--Зададим обёртку для списков в меню. Это поможет спозиционировать элементы в будущем.-->
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="page-main-photo">
+
+    <h1 class="visually-hidden">Фотографии
+      пользователей</h1>
+
+    <section class="headline">
+      <header class="headline__header">
+        <h2 class="visually-hidden">заголовок</h2>
+        <img class="headline__img" src="http://placehold.it" width="226" height="30" alt="Фон заголовка">
+        <h3 class="headline__title">Фотографии пользователей</h3>
+      </header>
+    </section>
+
+    <section class="subtitle">
+      <header class="subtitle__header">
+        <h2 class="visually-hidden">текст под заголовком</h2>
+        <p class="subtitle__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
+        <p class="subtitle__text">Видите, как не хватает ваших?</p>
+      </header>
+    </section>
+
+    <section class="reviews">
+      <h2 class="visually-hidden">комментарии пользователей</h2>
+      <div class="reviews__list">
+        <blockquote class="reviews__item">
+          <p class="reviews__author-picture">
+            <img class="reviews__author-image" src="#" width="50" height="33" alt="Фото Анны">
+          </p>
+          <cite class="reviews__author-name">Анна
+            <time class="reviews__date" datetime="">
+              (5 минут назад)
+            </time>
+          </cite>
+          <p class="reviews__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <p class="reviews__text"><img class="reviews__img" src="#" width="30" height="30" alt="сердце">Нравится: 215
+          </p>
+        </blockquote>
+
+        <blockquote class="reviews__item">
+          <p class="reviews__author-picture">
+            <img class="reviews__author-image" src="#" width="50" height="33" alt="Фото Левона">
+          </p>
+          <cite class="reviews__author-name">Левон
+            <time class="reviews__date" datetime="">
+              (5 часов назад)
+            </time>
+          </cite>
+          <p class="reviews__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="reviews__text"><img class="reviews__img" src="#" width="30" height="30" alt="сердце">Нравится: 356
+          </p>
+        </blockquote>
+
+        <blockquote class="reviews__item">
+          <p class="reviews__author-picture">
+            <img class="reviews__author-image" src="#" width="50" height="33" alt="Фото Антона">
+          </p>
+          <cite class="reviews__author-name">Антон
+            <time class="reviews__date" datetime="">
+              (12 часов назад)
+            </time>
+          </cite>
+          <p class="reviews__text">Соседи будут рады!</p>
+          <p class="reviews__text"><img class="reviews__img" src="#" width="30" height="30" alt="сердце">Нравится: 666
+          </p>
+        </blockquote>
+
+        <blockquote class="reviews__item">
+          <p class="reviews__author-picture">
+            <img class="reviews__author-image" src="#" width="50" height="33" alt="Фото Бориса">
+          </p>
+          <cite class="reviews__author-name">Борис
+            <time class="reviews__date" datetime="">
+              (20 часов назад)
+            </time>
+          </cite>
+          <p class="reviews__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="reviews__text"><img class="reviews__img" src="#" width="30" height="30" alt="сердце">Нравится: 215
+          </p>
+        </blockquote>
+
+        <blockquote class="reviews__item">
+          <p class="reviews__author-picture">
+            <img class="reviews__author-image" src="#" width="50" height="33" alt="Фото Сергея">
+          </p>
+          <cite class="reviews__author-name">Сергей
+            <time class="reviews__date" datetime="">
+              (25 часов назад)
+            </time>
+          </cite>
+          <p class="reviews__text">Самая кубанская в мире!</p>
+          <p class="reviews__text"><img class="reviews__img" src="#" width="30" height="30" alt="сердце">Нравится: 4</p>
+        </blockquote>
+
+        <blockquote class="reviews__item">
+          <p class="reviews__author-picture">
+            <img class="reviews__author-image" src="#" width="50" height="33" alt="Фото Максима">
+          </p>
+          <cite class="reviews__author-name">Максим
+            <time class="reviews__date" datetime="">
+              (40 часов назад)
+            </time>
+          </cite>
+          <p class="reviews__text">Где снег-то?</p>
+          <p class="reviews__text"><img class="reviews__img" src="#" width="30" height="30" alt="сердце">Нравится: 150
+          </p>
+        </blockquote>
+
+        <blockquote class="reviews__item">
+          <p class="reviews__author-picture">
+            <img class="reviews__author-image" src="#" width="50" height="33" alt="Фото Надежды">
+          </p>
+          <cite class="reviews__author-name">Надежда
+            <time class="reviews__date" datetime="">
+              (45 часов назад)
+            </time>
+          </cite>
+          <p class="reviews__text">Всем GM и взаимные лайки!</p>
+          <p class="reviews__text"><img class="reviews__mg" src="#" width="30" height="30" alt="сердце">Нравится:
+            2560</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo logo">
+          <a class="logo__link" href="#">
+            <img class="logo__img" src="#" width="226" height="30" alt="Пинк">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="https://twitter.com">
+                <img class="social__img social__img--twitter" src="#" width="30" height="30" alt="Мы в Твиттере">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.facebook.com">
+                <img class="social__img social__img--facebook" src="#" width="30" height="30" alt="Мы в Фейсбуке">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.youtube.com">
+                <img class="social__img social__img--youtube" src="#" width="30" height="30" alt="Мы в YouTube">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__img copyright__img--HTML Academy" src="#" width="30" height="30" alt="HTML Academy">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</body>
+
+</html>
