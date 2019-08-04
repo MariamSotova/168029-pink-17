@@ -8,11 +8,15 @@
 @import "page-main-photo.less";
 @import "reviews.less";
 @import "subtitle.less";
-@import "logo.less";
 @import "social.less";
 @import "copyright.less";
 @import "scaffolding.less";
 @import "outlines.less";
+@import "mixins.less";
+@import "main-nav.less";
+@import "site-list.less";
+@import "icons.less";
+@import "backgtound-img.less";
 
 @font-face {
   font-family: "Open Sans", sans-serif;
@@ -24,4 +28,15 @@
   src: url("/source/fonts/opensanslight.woff2");
   font-weight: normal;
   font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
