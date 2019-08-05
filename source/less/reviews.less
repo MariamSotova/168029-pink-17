@@ -8,8 +8,7 @@
 
 .reviews__item {
   width: 280px;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 10px;
   padding: 0;
   background-color: @bg-reviews;
   text-align: @text-align-reviews;
@@ -45,4 +44,23 @@
   line-height: @line-height - 6px;
   text-transform: @text-transform;
   color: @color-text--like;
+}
+
+.img-reviews {
+  flex-grow: 1;
+  height: 509px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 620px;
+  }
+
+  .img-reviews {
+    flex-basis: 100%;
+    width: 100%;
+    height: 509px;
+  }
 }

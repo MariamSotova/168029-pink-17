@@ -3,7 +3,8 @@
 }
 
 .advantages__list {
-  background-color: @bg-list;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages__text {
@@ -13,7 +14,12 @@
   text-align: @text-align;
 }
 
+.advantages__wrapper {
+  background-color: @bg-list;
+}
+
 .advantages__item {
+
   text-align: @text-align;
 }
 
@@ -25,4 +31,11 @@
 
 .advantages__description {
   color: @color-text;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item {
+    width: 320px;
+    text-align: left;
+  }
 }
