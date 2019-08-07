@@ -13,28 +13,30 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="page-header__header-menu">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
 
@@ -50,8 +52,10 @@
 
         <div class="add__bg bg-img">
           <div class="add__icons icons">
-            <p class="icons__text">Взгляните на жизнь
-              иначе!</p>
+            <div class="icons__text text-header">
+              <p class="text-header__text">Взгляните на жизнь
+                иначе!</p>
+            </div>
             <a class="icons__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
             <ul class="icons__list icons-list">
               <li class="icons-list__item">
@@ -70,8 +74,10 @@
                 </a>
               </li>
             </ul>
-            <small class="icons__legend--bottom">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-            </small>
+            <div class="icons__text text-bottom">
+              <small class="text-bottom__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+              </small>
+            </div>
           </div>
         </div>
       </header>
@@ -81,7 +87,7 @@
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="advantages__header">
         <p class="advantages__text">Устали от серости мегаполиса?</p>
-        <p class="advantages__text">Нам есть, что вам предложить!</p>
+        <p class="advantages__text advantages__text--offer">Нам есть, что вам предложить!</p>
       </div>
       <div class="advantages__wrapper">
         <ul class="advantages__list">

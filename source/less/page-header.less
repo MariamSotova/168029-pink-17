@@ -1,12 +1,15 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   background-color: @bg-header;
 }
 
+.page-header__header-menu {
+  display: flex;
+  margin: 0 auto;
+}
+
 .page-header__logo {
+  display: block;
   height: 70px;
-  text-align: left;
 }
 
 .page-header__logo img {
@@ -16,14 +19,18 @@
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
-    height: 110px;
+    min-height: 110px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    display: flex;
-    align-items: center;
+
+
     height: 110px;
+  }
+
+  .page-header__logo {
+    display: block;
   }
 }

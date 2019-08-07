@@ -19,7 +19,6 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     width: auto;
-    margin: 0;
   }
 
   .main-nav__wrapper {
@@ -29,24 +28,16 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .main-nav__wrapper {
-    width: 960px;
-  }
-
   .main-nav {
-    height: 110px;
+    min-height: 110px;
   }
 
   .site-list {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 620px;
+  }
+
+  .page-header {
+    margin: auto;
   }
 }
