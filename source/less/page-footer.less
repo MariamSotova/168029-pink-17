@@ -2,7 +2,26 @@
   list-style: none;
 }
 
-.page-footer__wrapper {
-  display: flex;
-  justify-content: space-between;
+.page-footer__wrp {
+  width: 280px;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__wrp {
+    width: 620px;
+    margin: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrp {
+    width: 940px;
+    margin: auto;
+  }
 }
