@@ -1,9 +1,7 @@
-.reviews__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
+.reviews__block {
+  margin: auto;
   padding: 0;
+  width: 280px;
 }
 
 .reviews__item {
@@ -46,21 +44,22 @@
   color: @color-text--like;
 }
 
-.img-reviews {
-  flex-grow: 1;
-  height: 509px;
-}
-
 @media (min-width: @tablet-width) {
-  .reviews__list {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .reviews__block {
     width: 620px;
+    margin: auto;
   }
 
-  .img-reviews {
-    flex-basis: 100%;
-    width: 100%;
-    height: 509px;
+  .reviews__list {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__block {
+    width: 940px;
+    margin: auto;
   }
 }

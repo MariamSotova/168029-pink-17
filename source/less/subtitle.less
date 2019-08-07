@@ -1,6 +1,29 @@
+.subtitle__header {
+  width: 250px;
+  margin: auto;
+  text-align: center;
+}
+
 .subtitle__text {
   color: @color-text;
   font-size: @font-size - 4px;
   line-height: @line-height;
-  text-align: @text-align;
+}
+
+@media (min-width: @tablet-width) {
+  .subtitle__header {
+    width: 500px;
+    margin: auto;
+  }
+
+  .subtitle__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .subtitle__header {
+    width: 800px;
+    margin: auto;
+  }
 }
