@@ -1,8 +1,29 @@
-@color-headline-title: #ffffff;
-
 .headline__title {
+  width: 280px;
+  padding: 0;
+  margin: auto;
   font-size: @font-size + 6px;
   color: @color-headline-title;
   text-align: @text-align;
-  background-color: blue; /*убрать потом*/
+  font-weight: lighter;
+}
+
+@media (min-width: @tablet-width) {
+  .headline {
+    min-height: 440px;
+  }
+
+  .headline__title {
+    font-size: 50px;
+    width: 620px;
+    margin: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .headline {
+    min-height: 340px;
+    width: 820px;
+    margin: auto;
+  }
 }

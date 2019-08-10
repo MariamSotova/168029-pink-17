@@ -1,1 +1,39 @@
-@font-size: 18px;
+.social__item {
+  list-style: none;
+}
+
+.page-footer__wrp {
+  width: 280px;
+  margin: auto;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrp {
+    width: 660px;
+    margin: auto;
+  }
+
+  .page-footer__wrapper {
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrp {
+    width: 960px;
+    margin: auto;
+  }
+
+  .page-footer__wrapper {
+    width: 940px;
+  }
+}

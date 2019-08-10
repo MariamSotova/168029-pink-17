@@ -1,19 +1,30 @@
-@font-weight-add: light;
-@bg-add: #1d2631;
-@color-add: #ffffff;
-
-.icons {
-  background-color: @bg-add;
+.background-img,
+.headline__header {
+  width: 100%;
+  height: 400px;
+  background-color: @bg-header;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: -20px;/*выравнить*/
+  background-size: cover;
 }
 
-.icons__link {
-  color: @color-add;
-  font-size: @font-size - 4px;
+@media (min-width: @tablet-width) {
+  .background-img,
+  .headline__header {
+    background-color: @bg-header;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -50px;
+    background-size: cover;
+  }
 }
 
-.icons__legend--bottom {
-  text-align: @text-align;
-  color: @color-add;
-  font-size: @font-size - 4px;
-  line-height: @line-height - 6px;
+@media (min-width: @desktop-width) {
+  .background-img,
+  .headline__header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center 0;
+    background-size: cover;
+  }
 }
