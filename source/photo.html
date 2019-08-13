@@ -13,29 +13,35 @@
 <body>
   <header class="page-header">
     <div class="page-header__header-menu">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <!--Зададим обёртку для списков в меню. Это поможет спозиционировать элементы в будущем.-->
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="main-nav main-nav--opened"> <!--main-nav--closed-->
+        <ul class="main-nav__list logo-list">
+          <li class="logo-list__item">
+            <a class="page-header__logo" href="index.html">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+                alt="Пинк">
+            </a>
+          </li>
+          <li class="logo-list__item">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </li>
+        </ul>
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
+      <h3 class="headline__title">Фотографии пользователей</h3>
     </div>
   </header>
 
@@ -43,14 +49,6 @@
 
     <h1 class="visually-hidden">Фотографии
       пользователей</h1>
-
-    <section class="headline">
-      <header class="headline__header">
-        <h2 class="visually-hidden">заголовок</h2>
-        <!--<img class="headline__img" src="img/back-mobile@1x.jpg" width="320" height="462" alt="Фон заголовка">-->
-        <h3 class="headline__title">Фотографии пользователей</h3>
-      </header>
-    </section>
 
     <section class="subtitle">
       <header class="subtitle__header">
