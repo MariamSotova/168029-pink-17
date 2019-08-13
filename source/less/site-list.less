@@ -33,9 +33,16 @@
   }
 }
 
-/*
-.site-list__item {
-  width: 320px;
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid black;
-}*/
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    border: none;
+  }
+
+  .logo-list {
+    border: none;
+  }
+
+  .site-list {
+    width: 620px;
+  }
+}
