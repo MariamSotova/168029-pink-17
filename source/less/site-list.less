@@ -19,6 +19,16 @@
   border-bottom: 1px solid black;
 }
 
+.site-list a[href] {
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
 .site-list__item {
   width: 320px;
   padding-top: 25px;
@@ -44,5 +54,6 @@
 
   .site-list {
     width: 620px;
+    margin: 0;
   }
 }
