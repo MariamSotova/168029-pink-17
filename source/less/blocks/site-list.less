@@ -46,6 +46,23 @@
 @media (min-width: @desktop-width) {
   .site-list__item {
     border: none;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        left: 0;
+
+        height: 2px;
+
+        background: #ffffff;
+      }
+    }
   }
 
   .logo-list {

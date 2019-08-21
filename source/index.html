@@ -43,8 +43,7 @@
     </div>
     <div class="add__icons icons">
       <div class="icons__text text-header">
-        <p class="text-header__text">Взгляните на жизнь
-          <br> иначе!</p>
+        <p class="text-header__text">Взгляните на жизнь <br> иначе!</p>
       </div>
       <a class="icons__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
       <ul class="icons__list icons-list">
@@ -65,7 +64,7 @@
         </li>
       </ul>
       <div class="icons__text text-bottom">
-        <small class="text-bottom__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        <small class="text-bottom__text">Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8
         </small>
       </div>
     </div>
@@ -109,21 +108,28 @@
         </ul>
       </div>
     </section>
+    <section>
+      <div class="first">
+
+      </div>
+
+    </section>
+
   </main>
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
 
     navMain.classList.remove('main-nav--nojs');
-    navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
 
   </script>
 </body>

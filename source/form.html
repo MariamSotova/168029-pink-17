@@ -12,7 +12,7 @@
 
 <body>
   <header class="page-header">
-
+    <div class="page-header__header-menu">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <!--main-nav--closed-->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -41,7 +41,7 @@
         </ul>
       </nav>
       <h3 class="headline__title">Конкурс на самое <br> безбашенное <br> путешествие с Пинк</h3>
-
+    </div>
   </header>
 
   <main class="page-main-form">
@@ -89,11 +89,11 @@
     </footer>
   </main>
   <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
 
-      navMain.classList.remove('main-nav--nojs');
-      navToggle.addEventListener('click', function() {
+    navMain.classList.remove('main-nav--nojs');
+    navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
         navMain.classList.add('main-nav--opened');
@@ -103,7 +103,7 @@
       }
     });
 
-    </script>
+  </script>
 </body>
 
 </html>

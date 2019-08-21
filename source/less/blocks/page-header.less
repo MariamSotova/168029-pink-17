@@ -1,6 +1,12 @@
 .page-header {
   margin: auto;
+  width: 100%;
+  min-height: 170px;
   background-color: @bg-header;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .page-header__header-menu {
@@ -22,7 +28,7 @@
 }
 
 .headline__title {
-  width: 280px;
+  width: 100%;
   padding: 0;
   margin: auto;
   font-size: @font-size + 6px;
@@ -43,24 +49,33 @@
     margin-bottom: 45px;
   }
 
-  .headline__title {
+  .page-header {
     font-size: 50px;
-    width: 620px;
+    width: 100%;
+    min-height: 620px;
     margin: auto;
-    padding-top: 80px;
-    padding-bottom: 150px;
+
+    background-color: @bg-header;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    height: 110px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center 0;
+    background-size: cover;
+    min-height: 400px;
   }
 
   .page-header__header-menu {
     width: 940px;
     display: flex;
     flex-wrap: wrap;
+    background: none;
   }
 
   .headline__title {
@@ -68,5 +83,7 @@
     margin: auto;
     padding-top: 75px;
     padding-bottom: 110px;
+
+    background: none;
   }
 }
