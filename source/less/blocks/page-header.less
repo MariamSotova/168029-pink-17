@@ -1,18 +1,12 @@
 .page-header {
-  margin: auto;
-  width: 100%;
-  min-height: 170px;
-  background-color: @bg-header;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #1d2631;
 }
 
 .page-header__header-menu {
   display: flex;
   flex-direction: column;
   margin: auto;
+  background: #283645;
 }
 
 .page-header__logo {
@@ -48,34 +42,27 @@
     margin-top: 30px;
     margin-bottom: 45px;
   }
-
-  .page-header {
-    font-size: 50px;
-    width: 100%;
-    min-height: 620px;
-    margin: auto;
-
-    background-color: @bg-header;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
     background-position: center 0;
     background-size: cover;
-    min-height: 400px;
+    min-height: 750px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+      height: 853px;
+    }
   }
 
   .page-header__header-menu {
-    width: 940px;
     display: flex;
     flex-wrap: wrap;
     background: none;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .headline__title {
