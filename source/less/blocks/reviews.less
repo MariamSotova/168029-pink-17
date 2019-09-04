@@ -1,12 +1,13 @@
 .reviews__block {
   margin: auto;
   padding: 0;
-  width: 280px;
+  width: 320px;
 }
 
 .reviews__item {
   width: 280px;
   margin: auto;
+  margin-bottom: 20px;
   padding: 0;
   background-color: @bg-reviews;
   text-align: @text-align-reviews;
@@ -17,24 +18,49 @@
   padding: 0;
 }
 
+.reviews__author-picture--img {
+  position: relative;
+  margin-left: -20px;
+}
+
+.reviews__author-picture--day {
+  position: absolute;
+  width: 140px;
+  height: 36px;
+  background: #d22856;
+  right: 0;
+}
+
+.reviews__author-picture__item {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
 .reviews__author-name {
   font-size: @font-size - 4px;
   line-height: @line-height - 6px;
-  color: @color-author-name;
+  color: #283645;
   font-style: normal;
   font-weight: bold;
+  margin-left: 20px;
 }
 
 .reviews__date {
   font-size: @font-size - 6px;
   text-transform: @text-transform;
-  font-weight: @font-weight-reviews__date;
+  font-weight: lighter;
 }
 
 .reviews__text {
   color: @color-text;
   font-size: @font-size - 4px;
   line-height: @line-height - 6px;
+  margin-left: 20px;
 }
 
 .reviews__text--like {
@@ -42,6 +68,11 @@
   line-height: @line-height - 6px;
   text-transform: @text-transform;
   color: @color-text--like;
+  margin: 0;
+}
+
+.reviews__text--heart {
+  margin-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,10 +92,46 @@
   .reviews__item {
     width: 300px;
     margin: 0;
+    margin-bottom: 20px;
   }
 
-  blockquote.reviews__item.reviews__item--img {
+  .reviews__author-picture {
+    margin-bottom: 20px;
+  }
+
+  .reviews__item--img {
     width: 620px;
+    margin-bottom: 50px;
+  }
+
+  .reviews__text {
+    margin-right: 20px;
+  }
+
+  .reviews__text--like {
+    margin-bottom: 30px;
+  }
+
+  .reviews__author-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .reviews__author-image--img-reviews {
+    width: 700px;
+    height: 509px;
+  }
+
+  .reviews__text--comment {
+    min-height: 50px;
+  }
+
+  .reviews__author-picture--day {
+    top: 55px;
+  }
+
+  .reviews__author-picture--img {
+    margin-left: -40px;
   }
 }
 
@@ -81,7 +148,25 @@
     justify-content: space-between;
   }
 
-  blockquote.reviews__item.reviews__item--img {
+  .reviews__item--img {
     width: 940px;
+  }
+
+  .reviews__author-image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .reviews__author-image--img-reviews {
+    width: 1200px;
+    height: 506px;
+  }
+
+  .reviews__author-picture--img {
+    margin-left: -120px;
+  }
+
+  .reviews__item {
+    margin-bottom: 54px;
   }
 }
