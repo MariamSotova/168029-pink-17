@@ -19,6 +19,27 @@
   margin-bottom: 40px;
 }
 
+.page-footer__logo-desk {
+  display: none;
+}
+
+.page-footer__logo-mob,
+.page-footer__logo-desk {
+  fill: #283645;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #283645;
+    fill-opacity: 0.5;
+  }
+}
+
+.page-footer__logo-mob--academy {
+  margin-top: 5px;
+}
 /*.social__link {
   display: inline-block;
   width: 78.25px;
@@ -54,6 +75,14 @@
   .page-footer__wrp {
     width: 940px;
     margin: auto;
+  }
+
+  .page-footer__logo-desk {
+    display: block;
+  }
+
+  .page-footer__logo-mob {
+    display: none;
   }
 
   .page-footer__wrapper {
