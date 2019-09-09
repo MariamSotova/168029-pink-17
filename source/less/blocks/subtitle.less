@@ -12,15 +12,53 @@
   margin: 54px 0 60px 0;
 }
 
+.title__text {
+  color: @color-text;
+  font-size: @font-size - 4px;
+  line-height: @line-height;
+  font-weight: normal;
+  margin: 0;
+}
+
+.subtitle__headline {
+  width: 280px;
+  margin: auto;
+  text-align: center;
+}
+
+.title__text--visually {
+  display: none;
+}
+
+.title__text--history {
+  margin: 54px 0 50px 0;
+}
+
 @media (min-width: @tablet-width) {
-  .subtitle__header {
+  .subtitle__header,
+  .subtitle__headline {
     width: 500px;
     margin: auto;
+  }
+
+  .title__text--history {
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  .title__text--visually {
+    margin: 0;
+    margin-bottom: 75px;
+    display: block;
   }
 
   .subtitle__text {
     font-size: 18px;
     margin: 100px 0 84px 0;
+  }
+
+  .title__text {
+    font-size: 18px;
   }
 }
 
@@ -30,7 +68,16 @@
     margin: auto;
   }
 
+  .subtitle__headline {
+    width: 820px;
+    margin: auto;
+  }
+
   .subtitle__text {
     margin: 100px 0 90px 0;
+  }
+
+  .title__text--visually {
+    margin-bottom: 75px;
   }
 }
