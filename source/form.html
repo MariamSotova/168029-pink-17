@@ -137,17 +137,20 @@
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <div class="form__text form-text">
           <fieldset class="form__fieldset form__fieldset--surname">
-            <ul class="info">
-           <li class="info__item"><label class="form-text__item form-text--lable" for="surname-text">Фамилия:</label>
-            <input class="form-text__item form-text--input" id="surname-text" type="text" name="surname" required
-              autofocus placeholder="Укажите фамилию *" autocomplete="on"></li>
-            <li class="info__item"><label class="form-text__item form-text--lable" for="name-text">Имя:</label>
-            <input class="form-text__item form-text--input" id="name-text" type="text" name="name" required autofocus
-              placeholder="Введите ваше имя *" autocomplete="on"></li>
-            <li class="info__item"><label class="form-text__item form-text--lable" for="patronymic-text">Отчество:</label>
-            <input class="form-text__item form-text--input" id="patronymic-text" type="text" name="patronymic" autofocus
-              placeholder="Ну и отчество тоже" autocomplete="on"></li>
-              </ul>
+            <ul class="info info-pink">
+              <li class="info__item info--myself"><label class="form-text__item form-text--lable"
+                  for="surname-text">Фамилия:</label>
+                <input class="form-text__item form-text--input" id="surname-text" type="text" name="surname" required
+                  autofocus placeholder="Укажите фамилию *" autocomplete="on"></li>
+              <li class="info__item info--myself"><label class="form-text__item form-text--lable"
+                  for="name-text">Имя:</label>
+                <input class="form-text__item form-text--input" id="name-text" type="text" name="name" required
+                  autofocus placeholder="Введите ваше имя *" autocomplete="on"></li>
+              <li class="info__item info--myself"><label class="form-text__item form-text--lable"
+                  for="patronymic-text">Отчество:</label>
+                <input class="form-text__item form-text--input" id="patronymic-text" type="text" name="patronymic"
+                  autofocus placeholder="Ну и отчество тоже" autocomplete="on"></li>
+            </ul>
           </fieldset>
         </div>
 
@@ -178,13 +181,15 @@
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend--info">Контактная информация</legend>
             <ul class="info">
-              <li class="info__item"><label class="form-text__item form-text--lable" for="tel">Номер телефона</label>
-                <input class="form-text__item form-text--input" type="tel" id="tel" name="tel"
-                  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста"></li>
+              <li class="info__item info__item--name"><label class="form-text__item form-text--lable form-text--phone"
+                  for="tel"><span class="phone-svg"></span>Номер телефона</label>
+                <input class="form-text__item form-text--input form-text__item--tel" type="tel" id="tel" name="tel"
+                  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста"></li>
 
-              <li class="info__item"><label class="form-text__item form-text--lable" for="email">Адрес почты</label>
-                <input class="form-text__item form-text--input" type="email" id="email" name="email" autocomplete="on"
-                  placeholder="Введите почту *" required></li>
+              <li class="info__item info__item--name"><label class="form-text__item form-text--lable form-text--phone"
+                  for="email"><span class="message-svg"></span>Адрес почты</label>
+                <input class="form-text__item form-text--input form-text__item--tel" type="email" id="email"
+                  name="email" autocomplete="on" placeholder="Введите почту *" required></li>
             </ul>
           </fieldset>
         </div>
@@ -193,42 +198,44 @@
           <h1 class="visually-hidden">checkbox</h1>
           <fieldset class="form__fieldset form__fieldset--bg">
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-            <label class="check option">
-              <input class="check__input" type="checkbox" name="selfie" tabindex="0" checked>
-              <span class="check__box"></span>
-              Сделал селфи с акулой
-            </label>
-
-            <label class="check option">
-              <input class="check__input" type="checkbox" name="burnt" tabindex="0" checked>
-              <span class="check__box"></span>
-              Обгорел на пляже
-            </label>
-
-            <label class="check option">
-              <input class="check__input" type="checkbox" name="norris" tabindex="0">
-              <span class="check__box"></span>
-              Видел Чака Норриса
-            </label>
-
-            <label class="check option">
-              <input class="check__input" type="checkbox" name="souvenirs" tabindex="0">
-              <span class="check__box"></span>
-              Накупил сувениров
-            </label>
-
-            <label class="check option">
-              <input class="check__input" type="checkbox" name="town" tabindex="0" checked>
-              <span class="check__box"></span>
-              Удержал башню
-            </label>
-
-            <label class="check option">
-              <input class="check__input" type="checkbox" name="hotel" tabindex="0">
-              <span class="check__box"></span>
-              Разгромил отель
-            </label>
-
+            <ul class="check__list">
+              <li class="check__item">
+                <label class="check option">
+                  <input class="check__input" type="checkbox" name="selfie" tabindex="0" checked>
+                  <span class="check__box"></span>
+                  Сделал селфи с акулой
+                </label></li>
+              <li class="check__item">
+                <label class="check option">
+                  <input class="check__input" type="checkbox" name="burnt" tabindex="0" checked>
+                  <span class="check__box"></span>
+                  Обгорел на пляже
+                </label></li>
+              <li class="check__item">
+                <label class="check option">
+                  <input class="check__input" type="checkbox" name="norris" tabindex="0">
+                  <span class="check__box"></span>
+                  Видел Чака Норриса
+                </label></li>
+              <li class="check__item">
+                <label class="check option">
+                  <input class="check__input" type="checkbox" name="souvenirs" tabindex="0">
+                  <span class="check__box"></span>
+                  Накупил сувениров
+                </label></li>
+              <li class="check__item">
+                <label class="check option">
+                  <input class="check__input" type="checkbox" name="town" tabindex="0" checked>
+                  <span class="check__box"></span>
+                  Удержал башню
+                </label></li>
+              <li class="check__item">
+                <label class="check option">
+                  <input class="check__input" type="checkbox" name="hotel" tabindex="0">
+                  <span class="check__box"></span>
+                  Разгромил отель
+                </label></li>
+            </ul>
           </fieldset>
         </div>
 
@@ -260,10 +267,10 @@
         <div class="page-footer__wrapper">
           <div class="page-footer__logo logo">
             <a class="logo__link" href="index.html">
-              <svg class="page-footer__logo-mob" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="147px" height="40px"
-                viewBox="0 0 146.3 40.375" preserveAspectRatio="xMinYMid" enable-background="new 0 0 146.3 40.375"
-                xml:space="preserve">
+              <svg class="page-footer__logo-mob page-footer__logo-mob--svg" version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="147px" height="40px" viewBox="0 0 146.3 40.375" preserveAspectRatio="xMinYMid"
+                enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                 <g>
                   <path
                     d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z" />
