@@ -1,0 +1,85 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+    width: 660px;
+    margin: auto;
+  }
+
+  .effect__main {
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  .fieldset-list {
+    margin: 0;
+    padding: 0;
+    width: 310px;
+    border: none;
+  }
+
+  .legend__list {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    width: 170px;
+    color: #000000;
+  }
+
+  .effect__item {
+    font-size: 14px;
+    color: #283645;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+  }
+
+  .effect__link {
+    color: #d22856;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    width: 960px;
+  }
+
+  .clock__img {
+    width: 298px;
+    height: 345px;
+  }
+
+  .effect__main {
+    width: 940px;
+    margin-top: 75px;
+    margin-bottom: 67px;
+    align-items: center;
+  }
+
+  .fieldset-list {
+    width: 570px;
+  }
+
+  .effect__item {
+    width: 407px;
+    margin: 0;
+    margin-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  .legend__list {
+    width: 100%;
+  }
+}
+
